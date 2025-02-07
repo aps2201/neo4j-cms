@@ -7,7 +7,7 @@ neo4j_cred = dict(
     NEO4J_URI= [neo4j aura URL],
     NEO4J_USERNAME= [neo4j db username],
     NEO4J_PASSWORD= [neo4j db password],
-    AURA_INSTANCEID= [neo4j aura instance ID]
+    AURA_INSTANCEID= [neo4j aura instance ID],
     AURA_INSTANCENAME= [neo4j aura instance name]
 )
 ```
