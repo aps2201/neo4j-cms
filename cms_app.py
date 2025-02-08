@@ -3,6 +3,16 @@ from neo4j import GraphDatabase
 from __secret__ import neo4j_cred
 from datetime import datetime
 from uuid import uuid4
+import os
+
+
+def content_dir():
+    content_dir = "content"
+    try:
+        os.mkdir(content_dir)
+        print("Created folder 'content'! Resuming.")
+    except FileExistsError:
+        print("Folder 'content' found. Resuming.")
 
 
 def db_write(tx, *args, **kwargs):
@@ -72,6 +82,7 @@ def write_post(tx, author, content, title, source):
 @click.argument("content")
 @click.option("--source", default="cms")
 def post_write(content, source="cms"):
+    content_dir()   
     content = txt(content)
     author = "2"
     title = click.prompt("Add Title::")
@@ -102,6 +113,7 @@ def update_post_write(tx, post_id, content, title):
 @cms.command()
 @click.argument("post_id")
 def post_update(post_id):
+    content_dir()   
     post_to_update = db_read(update_post_read, post_id)
     default_title = post_to_update['p']['title']
     post_id = post_to_update['p']['post_id']

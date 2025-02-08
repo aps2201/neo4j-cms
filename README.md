@@ -30,4 +30,5 @@ Commands:
 You can write, delete, update, and list the existing posts in your neo4j database.
 
 TODO:
-- [ ] add function to create a content folder
+- [x] add function to create a content folder
+- [ ] explanation on how it works on the website
