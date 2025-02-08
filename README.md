@@ -22,9 +22,12 @@ you can get a free instance from the [neo4j Aura site](https://console.neo4j.io/
 
 # Usage
 Commands:
-  post-delete
-  post-list
-  post-update
-  post-write
+  - post-delete
+  - post-list
+  - post-update
+  - post-write
 
 You can write, delete, update, and list the existing posts in your neo4j database.
+
+TODO:
+- [] add function to create a content folder
