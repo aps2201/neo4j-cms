@@ -1,6 +1,6 @@
 # neo4j-CMS
 
-This is a CLI neo4j CMS tool for [my website](https://aps.web.id/). Its a nice little tool I've been using. To use it you need to create a \_\_secret\_\_.py file 
+This is a CLI neo4j CMS tool for [my website](https://aps.web.id/). Its a nice little tool I've been using. To install it you need to create a \_\_secret\_\_.py file in the following format:
 
 ```
 neo4j_cred = dict(
@@ -16,8 +16,9 @@ you can get a free instance from the [neo4j Aura site](https://console.neo4j.io/
 
 # Installation
 
-- Clone this repo. 
-- I recommend using pipenv, install using `pipenv install --editable .` inside the cloned folder.
+- Clone this repo.
+- Create a \_\_secret\_\_.py file with the format above.
+- I recommend using [pipenv](https://pipenv.pypa.io/en/latest/), install using `pipenv install --editable .` inside the cloned folder.
 
 
 # Usage
