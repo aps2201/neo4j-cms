@@ -1,5 +1,7 @@
+.venv
 __secret__.py
 __pycache__
 build
 *.egg-info
-Pipfile.lock
+*.lock
+content
